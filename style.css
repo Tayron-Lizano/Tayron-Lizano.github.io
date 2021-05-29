@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-size: 4rem;
+}
+
+/*
+=======================
+        HEADER
+=======================
+*/
+header, section{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    
+}
+
+header{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    background: rgba(250, 250, 250,0.95);  
+}
+.header__logo{
+    flex: 1;
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    font-size:larger;
+    color: rgb(250, 159, 41);
+    /*color: white;*/
+}
+.header__menu{
+    flex: 1.5;
+}
+.header__menu ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    list-style: none;
+}
+.header__menu ul a{
+    text-decoration: none;
+    color: rgb(250, 159, 41);
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header__menu ul a:hover{
+    border-bottom: solid 0.2rem;
+    border-color: rgb(250, 159, 41);
+}
+
+/*
+=======================
+     MAIN --- HOME
+=======================
+*/
+
+
+.section:nth-child(even){
+    background: rgb(249, 243, 243);
+}
+.section:nth-child(odd){
+    background: rgb(221, 221, 221);
+}
+
+
+.main__section--home, #home{
+    background: url(https://images.pexels.com/photos/533671/pexels-photo-533671.jpeg?cs=srgb&dl=pexels-pixabay-533671.jpg&fm=jpg)bottom no-repeat;
+    color: white;
+    text-align: center;
+    padding:25.2rem 0 ;
+    font-size: 2.2rem;
+    font-weight: 300;
+    
+}
+
+.main__section--home h1{
+    font-size: 4rem;
+}
+
+
+.btn{
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+    border: solid 0.3rem;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    cursor: pointer;
+
+    text-decoration: none;
+    padding: 0.85rem 2.4rem;
+    
+}
+
+.main__section--home .btn{
+    color: white;
+    border-color: white;
+}
+.main__section--home .btn:hover{
+    border-color: rgb(250, 159, 41);
+    background-color: rgb(250, 159, 41);
+}
+
+
+/*
+=======================
+     MAIN --- ABOUT
+=======================
+*/
+.main__section--about{
+    padding:16rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about_photo img{
+    height: 35rem;
+    width: 35rem;
+    background: yellow;
+    border-radius: 50%;
+}
+
+#about_text{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.main__section--about .btn, 
+.main__section--practice .btn{
+    border-color: rgb(250, 159, 41);
+    color: rgb(250, 159, 41);
+}
+.main__section--about .btn:hover,
+.main__section--practice .btn:hover{
+    background-color: rgb(250, 159, 41);
+    color: white;
+}
+
+/*
+=======================
+     MAIN --- WORK
+=======================
+*/
+
+.main__section--practice,
+.main__section--courses,
+.main__section--contact{
+    padding:4rem 0 5rem 0; 
+    text-align: center;
+}
+.title-section{
+    width: max-content;
+    font-size: 3rem;
+    margin:auto;
+    border-bottom: 3px solid rgb(250, 159, 41);
+}
+.main__section--practice h2{
+    font-size: 2rem;
+    margin: 3rem auto;
+}
+.main__section--practice iframe{
+    width:100rem;
+    height:40rem;
+    border:none;
+}
+
+/*
+=======================
+    MAIN --- COURSES
+=======================
+*/
+.gallery-courses{
+    max-width: 1110px;
+    padding:2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+img{
+    max-width: 35rem;
+    max-height: 35rem;
+    margin: 1rem;
+}
+
+
+/*
+=======================
+        FOOTER
+=======================
+*/
+
+footer{
+    height: 6rem;
+    background-color: rgb(249, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+=======================
+    MAIN - CONTACT
+=======================
+*/
+
+.main__section--contact .contact-options{
+    display: flex;
+    width: 60%;
+    padding: 3rem;
+    margin: 3rem auto;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.main__section--contact .contact-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    width: 20rem;
+    height: 15rem;
+}
+
+.contact-item a{
+    font-size: 1.5rem;
+    color:rgb(250, 159, 41);
+    text-decoration: none;
+}
+
+.contact-item img{
+    width: 4rem;
+}
+
+

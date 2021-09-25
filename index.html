@@ -33,19 +33,19 @@
         <link rel="stylesheet" href="style.css" />
         <script src="./page.js"></script>
     </head>
-    <body translate="no" onload="myFunction()">
+    <body translate="no" >
         <header>
             <div class="header__logo">Tayron Lizano</div>
             <nav class="header__menu" id="header__menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#practice">Projects</a></li>
+                    <li><a onclick="myNavbar()" class="nav_links" href="#home">Home</a></li>
+                    <li><a onclick="myNavbar()" class="nav_links" href="#about">About</a></li>
+                    <li><a onclick="myNavbar()" class="nav_links" href="#practice">Projects</a></li>
                     <!--<li><a href="#courses">Courses</a></li>-->
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a onclick="myNavbar()" class="nav_links" href="#contact">Contact</a></li>
                 </ul>
             </nav> 
-            <input type="checkbox" id="check" onchange="myFunction(this)"/>
+            <input type="checkbox" id="check" onchange="myFunction()"/>
             <label for="check" class="btn_menu">
                 <i class="fas fa-bars fa-2x" style="color: rgb(250, 159, 41)"></i>
             </label>

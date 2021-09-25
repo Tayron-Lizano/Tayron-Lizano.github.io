@@ -1,13 +1,27 @@
+function myFunction() {
 
-function myFunction(checkbox) {
+
+	const checkbox = document.querySelector("#check");
+
+	const header = document.querySelector(".header__menu");
+
 	if (checkbox.checked == true) {
-		//document.getElementById("header__menu").style.display = "block";
-		
-		document.querySelector(".header__menu").classList.toggle("header__menu--active");
-			
-	} 
-	//else {
-		////document.getElementById("header__menu").style.display = "none";
-		//document.querySelector(".header__menu").classList.toggle("header__menu");
-	//}
+		header.classList.toggle("header__menu--active");
+		console.log(checkbox.checked);
+	} else {
+		header.classList.toggle("header__menu--disable");
+		//checkbox.checked = false;
+		console.log(checkbox.checked);
+	}
+}
+
+function myNavbar() {
+	const checkbox = document.querySelector("#check");
+
+	document
+		.querySelector(".header__menu")
+		.classList.toggle("header__menu--disable");
+
+	checkbox.checked = false;		
+	console.log(checkbox.checked);
 }

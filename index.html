@@ -2,122 +2,189 @@
 <html lang="en">
     <head>
         <title>Tayron Lizano</title>
-        <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.rawgit.com/zkreations/SheetSlider/master/dist/sheetslider.min.css"/>
-        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.rawgit.com/zkreations/SheetSlider/master/dist/sheetslider.min.css"
+        />
 
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="./page.js"></script>
     </head>
-    <body translate="no">
-        
-
-        
-
+    <body translate="no" onload="myFunction()">
         <header>
             <div class="header__logo">Tayron Lizano</div>
-            <nav class="header__menu">
+            <nav class="header__menu" id="header__menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#practice">Practice</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#contact">Contact me</a></li>
+                    <li><a href="#practice">Projects</a></li>
+                    <!--<li><a href="#courses">Courses</a></li>-->
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </nav> 
+            <input type="checkbox" id="check" onchange="myFunction(this)"/>
+            <label for="check" class="btn_menu">
+                <i class="fas fa-bars fa-2x" style="color: rgb(250, 159, 41)"></i>
+            </label>
         </header>
         <main>
             <section id="home" class="section main__section--home">
                 <h1>Hello.</h1>
-                I am Junior Frontend Developer <br> <br>
+                I am Junior Web Developer <br />
+                <br />
 
                 <a class="btn" href="#contact">Contact me</a>
-                   
             </section>
             <section id="about" class="section main__section--about">
-                <div id="about_photo">
-                    <img src="/images/me.png" alt="Me">
-                </div>
+                <!--<div id="about_photo">-->
+                <!--<img src="/images/me.png" alt="Me" />-->
+                <!--</div>-->
                 <div id="about_text">
-                    <h1 class="title-section">About me.</h1><br>
-                    <p>Hola. Soy egresado en Ingeniería en sistemas computacionales de la Universidad <br>
-                    de Guayaquil, entusiasta del desarrollo web y la seguridad informática. <br> <br>
-                        Hoy en día tengo una meta clara: ser desarrollador full stack, es por eso que<br>
-                        actualmente me encuentro mejorando mis habilidades mediante cursos online. <br> <br>
+                    <h1 class="title-section">About me.</h1>
+                    <br />
+                    <!--<p>-->
+                        <!--Hola. Soy egresado en Ingeniería en sistemas-->
+                        <!--computacionales de la Universidad <br />-->
+                        <!--de Guayaquil, entusiasta del desarrollo web y la-->
+                        <!--seguridad informática, soy una <br />-->
+                        <!--persona que le gusta estar en constante aprendizaje,-->
+                        <!--cuando se me presentan retos <br />-->
+                        <!--los veo como una oportunidad para aprender algo nuevo.-->
+                        <!--<br /><br />-->
 
-                        De momento aqui encontraras una series de proyectos que he realizado como <br>
-                        práctica, sin más que decir... gracias por visitar mi página y espero que te gusten<br> mis proyectos.
-
-
-                    </p> <br>
-
-                    <a class="btn" href="https://drive.google.com/file/d/1QjCwLyCUpC_-VEyaJQv0_QIckXGDvVAY/view" target="_blank">Download CV</a>
-                    
-
+                        <!--Actualmente me encuentro mejorando mis habilidades-->
+                        <!--mediante cursos online <br />-->
+                        <!--para crear mi portafolio y en un futuro muy cercano-->
+                        <!--brindar mis servicios como <br />-->
+                        <!--desarrollador web.-->
+                    <!--</p>-->
+                    <br />
                 </div>
+
+                <a
+                    class="btn"
+                    href="https://drive.google.com/file/d/1a1bGQbLwW9szTNqn4O9RgF_E4biydRE1/view?usp=sharing"
+                    target="_blank"
+                    >Download CV</a
+                >
             </section>
             <section id="practice" class="section main__section--practice">
-                <h1 class="title-section">My Practice.</h1>
+                <h1 class="title-section">My Projects.</h1>
                 <h2>Tribute Page - FreeCodeCamp (Practice)</h2>
-                <iframe src="https://codepen.io/tayron-lizano/full/qBRPmXy/yPkJjRWKjYpk" frameborder="0"></iframe>
-                <br><br><br>
-                
-                <a class="btn" href="https://codepen.io/tayron-lizano/pens/public" target="_blank">
+                <iframe
+                    src="https://codepen.io/tayron-lizano/full/qBRPmXy/yPkJjRWKjYpk"
+                    frameborder="0"
+                ></iframe>
+                <br /><br /><br />
+
+                <a
+                    class="btn"
+                    href="https://codepen.io/tayron-lizano/pens/public"
+                    target="_blank"
+                >
                     See more
                 </a>
-                <br>
-                
+                <br />
             </section>
-            <section id="courses" class="section main__section--courses">
-                <h1 class="title-section">Courses.</h1>
-                <div class="gallery-courses">
-                        <figure>
-                            <img src="/images/cert_1.png" alt="Fundamentos de base de datos">
-                        </figure>
-                        <figure>
-                            <img src="/images/cert_2.png" alt="Git y GitHub">
-                        </figure>
-                        <figure>
-                            <img src="/images/cert_3.png" alt="HTML y CSS">
-                        </figure>
-                        <figure>
-                            <img src="/images/cert_4.png" alt="Fundamentos de Ingeniería de software">
-                        </figure>
-                        <figure>
-                            <img src="/images/cert_5.png" alt="Configuración de entorno de desarrollo en windows">
-                        </figure>
-                        <figure>
-                            <img src="/images/cert_6.png" alt="Programación básica">
-                        </figure>
-                </div>
-                
-            </section>
+            <!--<section id="courses" class="section main__section--courses">-->
+            <!--<h1 class="title-section">Courses.</h1>-->
+            <!--<div class="gallery-courses">-->
+            <!--<figure>-->
+            <!--<img-->
+            <!--src="/images/cert_1.png"-->
+            <!--alt="Fundamentos de base de datos"-->
+            <!--/>-->
+            <!--</figure>-->
+            <!--<figure>-->
+            <!--<img src="/images/cert_2.png" alt="Git y GitHub" />-->
+            <!--</figure>-->
+            <!--<figure>-->
+            <!--<img src="/images/cert_3.png" alt="HTML y CSS" />-->
+            <!--</figure>-->
+            <!--<figure>-->
+            <!--<img-->
+            <!--src="/images/cert_4.png"-->
+            <!--alt="Fundamentos de Ingeniería de software"-->
+            <!--/>-->
+            <!--</figure>-->
+            <!--<figure>-->
+            <!--<img-->
+            <!--src="/images/cert_5.png"-->
+            <!--alt="Configuración de entorno de desarrollo en windows"-->
+            <!--/>-->
+            <!--</figure>-->
+            <!--<figure>-->
+            <!--<img-->
+            <!--src="/images/cert_6.png"-->
+            <!--alt="Programación básica"-->
+            <!--/>-->
+            <!--</figure>-->
+            <!--</div>-->
+            <!--</section>-->
             <section id="contact" class="section main__section--contact">
-                <h1 class="title-section">Contact me.</h1>
+                <h1 class="title-section">Let's work together</h1>
                 <div class="contact-options">
                     <div class="contact-item">
-                        <img src="/images/linkedin.svg" alt="Linkedin">
-                        <a href="http://linkedin.com/in/tayron-plúas-lizano" target="_blank" rel="noopener noreferrer">Linkedin <br> tayron-plúas-lizano </a>
+                        <a
+                            href="https://github.com/Tayron-Lizano"
+                            target="_blank"
+                        >
+                            <i class="fab fa-github fa-1x"></i>
+                            GitHub
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <a
+                            href="https://www.linkedin.com/in/tayron-pl%C3%BAas-lizano/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fab fa-linkedin fa-1x"></i>
+                            Linkedin
+                        </a>
                     </div>
                     <div class="contact-item">
-                        <img src="/images/whatsapp.svg" alt="Whatsapp">
-                        <a href="https://api.whatsapp.com/send/?phone=593967856111&text=Hola%20tayron!" target="_blank" rel="noopener noreferrer">Whatsapp <br> 0967856111 </a>
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=593967856111&text=Hola%20tayron!"
+                            target="_blank"
+                        >
+                            <i class="fab fa-whatsapp fa-1x"></i>
+                            Whatsapp
+                        </a>
                     </div>
                     <div class="contact-item">
-                        <img src="/images/email.svg" alt="Mail">
-                        <a href="mailto:tp.lizano@gmail.com?subject=Interes%20en%20sus%20servicios"  rel="noopener noreferrer">Gmail <br> tp.lizano@gmail.com </a>
+                        <a
+                            href="mailto:tp.lizano@gmail.com?subject=Let's%20work%20together"
+                            target="_blank"
+                        >
+                            <i class="fas fa-envelope fa-1x"></i>
+                            Send a mail
+                        </a>
                     </div>
                 </div>
-
-            
             </section>
         </main>
 
         <footer>
-            <p>&copy 2021 Tayron Lizano, all rights reserved.</p>
+            <p>Designed and Coded by Tayron Lizano</p>
         </footer>
-        
     </body>
 </html>

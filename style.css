@@ -146,7 +146,8 @@ header {
 */
 .main__section--about {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
+
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -159,9 +160,10 @@ header {
 /*border-radius: 50%;*/
 /*}*/
 
-#about_text {
+.main__section--about #about_text {
     font-size: 2.5rem;
     font-weight: 300;
+    text-align: justify;
 }
 .main__section--about .btn,
 .main__section--practice .btn {
@@ -229,6 +231,17 @@ header {
 .main__section--practice .title-section,
 .main__section--contact .title-section {
     margin-top: 3rem;
+}
+
+.main__section--contact #contact_text {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main__section--contact #contact_text {
+    font-weight: 300;
 }
 
 .main__section--contact .contact-options {
@@ -363,5 +376,19 @@ footer {
     }
     .main__section--contact .contact-options .contact-item {
         padding: 3px;
+    }
+}
+
+@media (min-width: 900px) {
+    #about_text p {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main__section--about {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }

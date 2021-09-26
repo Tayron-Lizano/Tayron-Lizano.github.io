@@ -289,7 +289,18 @@ footer {
     #about_text {
         font-size: 1.9rem;
     }
+
 }
+
+@media (max-width: 500px) {
+    .main__section--about{
+        padding-left: 6rem;
+        padding-right: 6rem;
+
+    }
+
+}
+
 @media (min-width: 501px) and (max-width: 780px) {
     #about_text {
         font-size: 2.1rem;

@@ -63,7 +63,7 @@ header {
 .header__menu ul a {
     text-align: center;
     display: block;
-height: 100%;
+    height: 100%;
     text-decoration: none;
     color: rgb(250, 159, 41);
     font-size: 1.5rem;
@@ -71,8 +71,7 @@ height: 100%;
     cursor: pointer;
 }
 
-.header__menu ul a:hover
-{
+.header__menu ul a:hover {
     border-bottom: solid 0.2rem;
     border-color: rgb(250, 159, 41);
     /*transition: ease-in;*/
@@ -292,7 +291,7 @@ footer {
 @media (max-width: 700px) {
     .header__logo {
         text-align: center;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
     .header__menu {
@@ -302,6 +301,7 @@ footer {
         top: 60px;
         width: 100%;
         height: 200px;
+        z-index: -1;
         /*transition: 5s ;*/
         transform: translateY(-130%);
         transition: transform 0.5s ease-in;
@@ -311,7 +311,7 @@ footer {
         transform: translateY(0%);
     }
 
-    .header__menu--disable{
+    .header__menu--disable {
         transform: translateY(-130%);
     }
 
@@ -331,13 +331,13 @@ footer {
     /*visibility: visible;*/
     /*}*/
 
-    .header__menu ul li{
+    .header__menu ul li {
         /*display: flex;*/
-        display:block;
+        display: block;
         height: 25%;
     }
 
-    .header__menu ul a{
+    .header__menu ul a {
         /*display: block;*/
         padding-top: 13px;
     }
@@ -360,5 +360,8 @@ footer {
 @media (max-width: 793px) {
     .main__section--contact .contact-options {
         flex-direction: column;
+    }
+    .main__section--contact .contact-options .contact-item {
+        padding: 3px;
     }
 }
